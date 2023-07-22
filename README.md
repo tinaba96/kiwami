@@ -1,4 +1,4 @@
-# Kiwami
+# Reservation Management System　Kiwami
 
 - Frontend Repository  
 [Frontend](https://github.com/Sauna-Kiwami/kiwami-frontend/tree/main)  
@@ -10,7 +10,7 @@
 - - -
 ## Overview
 - - -
-This is the reservation app for Sauna Business. It was developed for pre-open period (30/11/2022 - 14/12/2022) for the users who were invited to the Sauna (Kiwami) which is located in Nagoya, Japan.
+This is the Reservation Management System for Sauna Business. It was developed for pre-open period (30/11/2022 - 14/12/2022) for the users who were invited to the Sauna (Kiwami) which is located in Nagoya, Japan.
 
 
 - - -
@@ -53,20 +53,24 @@ All the functions above worked successfully and there was no server down during 
 - - - 
 
 # How To
-
-
-
 ## Development in Local
+### Frontend
+
+
+### Backend
+
+
 
 ## Main Tech Stack
-- Firebase (for user authentication)
+- Firebase9.7 (for user authentication)
 - Mysql5.7
-- Reactjs
-- Next.js
-- Typescript
+- Reactjs17.0.2
+- Next.js12.1.0
+- Typescript4.6.2
 - Ruby
 - Ruby on Rails
 - Heroku & vercel (for deployment)
+- Docker
 
 
 ## Architecture
