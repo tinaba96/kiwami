@@ -1,0 +1,21 @@
+.cancelBtn {
+  display: block;
+  background: #4979ff;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+}
+
+.ul {
+  padding:0; /*デフォルトの指定解除*/
+  border:3px solid #2a77e0; /*ul全体の境界線を指定*/
+  background: #d3e6ff; /*背景色を指定*/
+}
+.li {
+  padding:10px; /*liの余白指定*/
+  border-bottom: 1px #2a77e0 dotted; /*liの下に境界線を指定*/
+}
+.li:last-child {
+  border-bottom:none; /*最後のliだけborderを非表示に*/
+} 

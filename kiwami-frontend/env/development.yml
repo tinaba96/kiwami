@@ -1,0 +1,2 @@
+ENV: development
+KIWAMI_DOMAIN: https://kiwami-sauna-backend.herokuapp.com

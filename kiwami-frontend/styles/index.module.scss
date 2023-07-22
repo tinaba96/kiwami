@@ -1,0 +1,182 @@
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0 40px;
+  z-index: 50;
+  position: fixed;
+  .logo {
+    font-size: 20px;
+  }
+
+  nav {
+    margin-left: auto;
+  }
+  li {
+    display: inline-block;
+    margin-right: 15px;
+
+    &:nth-child(6) {
+      background-color: rgb(34, 35, 35);
+      color: white;
+      width: 90px;
+      padding: 5px 10px;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    position: initial;
+    nav {
+      display: none;
+    }
+  }
+}
+
+.humburger {
+  background-color: rgb(34, 35, 36);
+  color: white;
+  padding: 10px 5px 0 5px;
+  display: none;
+  cursor: pointer;
+  position: relative;
+  // margin-right: auto !important;
+  span {
+    background-color: white;
+    width: 30px;
+    height: 1px;
+    display: block;
+    margin-bottom: 7px;
+    &:nth-child(1) {
+      width: 20px;
+      margin-left: 10px;
+    }
+  }
+  p {
+    font-size: 13px;
+    margin-top: -4px;
+    margin-bottom: 0px;
+  }
+}
+
+.drawerMenu {
+  width: 0;
+  color: white;
+  background-color: rgb(34, 35, 36);
+
+  transition: 0.5s;
+  height: 0;
+  opacity: 0;
+  z-index: -100;
+  &.open {
+    height: 100vh;
+    opacity: 1;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 20px;
+    .logo {
+      margin-top: 25px;
+    }
+  }
+  .container {
+    margin: 0 0 0 auto;
+    .humburger {
+      display: block;
+    }
+  }
+  .drawerMenu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    ul {
+      width: 90%;
+      margin: 0 auto;
+      li {
+        margin-bottom: 25px;
+        opacity: 0.8;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 200;
+      }
+    }
+  }
+  .mobileLogo {
+    width: 250px;
+    height: 80px;
+    display: inline-block;
+    // position: absolute;
+    top: 0px;
+  }
+  .mainTitle {
+    font-size: 28px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    color: white;
+    font-family: "メイリオ";
+  }
+  .subTitle {
+    font-size: 15px;
+  }
+  .close {
+    cursor: pointer;
+    margin-top: 28px;
+    margin-right: 20px;
+    padding-right: 5px;
+    span {
+      background-color: white;
+      width: 30px;
+      height: 1px;
+      display: block;
+      margin-bottom: 10px;
+      margin: 0 0 10px auto;
+      &:first-child {
+        transform: translateY(6px) rotate(150deg);
+      }
+      &:nth-child(2) {
+        transform: translateY(-6px) rotate(-150deg);
+        margin-bottom: 0;
+      }
+    }
+    p {
+      text-align: right;
+      font-size: 11px;
+      padding-right: 1px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    padding: 0 20px;
+  }
+  .container {
+    margin-right: auto;
+    margin-left: 0;
+    .humburger {
+      display: block;
+    }
+  }
+  // .humburger {
+  //   top: 15px;
+  //   right: 20px;
+  // }
+  .mobileLogo {
+    width: 190px;
+    height: 60px;
+    top: 10px;
+  }
+}
+// @media (max-width: 375px) {
+//   .header {
+//     padding: 0 10px;
+//     .logo {
+//       width: 170px;
+//       height: 60px;
+//     }
+//   }
+// }

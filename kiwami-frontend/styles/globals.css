@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+body {
+  background: #f2f2f2;
+  color: #333;
+  font-family: "Nunito";
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+nav {
+  margin: 10px auto 30px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid rgb(187, 37, 37);
+}
+nav a {
+  margin-left: 20px;
+}
+nav .logo {
+  margin-right: auto;
+}
+nav btn {
+  margin-left: auto;
+  display: block;
+  width: 50px;
+  background: #4979ff;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  color: #777;
+  border-top: 1px solid rgb(187, 37, 37);
+}
+.not-found {
+  text-align: center;
+}
+.not-found a{
+  color: #4979ff;
+  text-decoration: underline;
+}
+/* .closeBtn {
+  display: block;
+  width: 150px;
+  padding: 8px 0;
+  margin: 20px auto;
+  background: #4979ff;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  } */
+
+
+  .overlay-base {
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(235, 26, 26, 0);
+    opacity: 0;
+    transition-property: background-color, opacity;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    outline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay-after {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+  }
+  
+  .overlay-before {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+  }
+  
+  .content-base {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin: 0 auto;
+    border: 0;
+    outline: 0;
+    justify-content: center;
+    align-items: center;
+    /* background-color: transparent; */
+    background-color: #f2f2f2 !important;
+    /* background-color: rgb(242, 225, 244) !important; */
+    transition-property: background-color, width, height;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .content-after {
+    width: auto;
+    height: 60%;
+    background-color: rgba(250, 190, 190, 0.8);
+  }
+  
+  .content-before {
+    width: 0%;
+    height: 0%;
+    background-color: transparent;
+  }
+
+  .alert {
+    color: red;
+  }
+
+
+  .right-text {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-title {
+    margin-bottom: -20px;
+  }
+
+  .footer {
+    padding-bottom: 600px;
+  }
+  
