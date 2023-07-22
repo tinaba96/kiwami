@@ -112,8 +112,8 @@ docker-compose run --rm api bundle exec rails db:seed
 
 
 
-## Demo (SP version)
-[demo](https://drive.google.com/file/d/1Om5dcyb7CAjAPm03jB-MlNz_VycCS_IK/view?usp=sharing)  
+## Demo
+[demo(SP version)](https://drive.google.com/file/d/1Om5dcyb7CAjAPm03jB-MlNz_VycCS_IK/view?usp=sharing)  
 [demo(admin_page)](https://drive.google.com/file/d/1mTizYoQ97IGYCjTgNiEv2eivdAkuxC7L/view?usp=sharing)
 
 
