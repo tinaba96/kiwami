@@ -1,11 +1,8 @@
-# Reservation Management System　Kiwami
+# Reservation Management System　-Kiwami-
 
-- Frontend Repository  
-[Frontend](https://github.com/Sauna-Kiwami/kiwami-frontend/tree/main)  
+- [Frontend](https://github.com/tinaba96/kiwami/tree/master/kiwami-frontend)
 
-- Backend Repository  
-[Backend](https://github.com/Sauna-Kiwami/kiwami-backend/tree/development)
-
+- [Backend](https://github.com/tinaba96/kiwami/tree/master/kiwami-backend)
 
 - - -
 ## Overview
