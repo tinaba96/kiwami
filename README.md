@@ -39,7 +39,7 @@ This app contains following functions:
 
 I used Firebase for user authentication for them to login to the reservation app. Also I implemented a lot of validation for both frontend and backend such as the limitation of number of reservations in each slots and ID should be invalid if it is already used by other users.
 I also considered the cases that same user can reserve multiple times if they have multiple IDs.
-What I fucused on is that I tried to implement most of the function in Frontend to prevent the users to make any actions that affects badly on our server side. If a lot of users calls many APIs at the same, the server load can be higher that may leads to the server down. In addition, instead of asking backend for processing or data in Database, I tried to handle that in frontend in order to reduce the API calls and loading time so that I can increase the User Experience. (ex. Disable all the time slots on the same day once the user reserves (calls the API) instead of calling the APIs to check each time slots whether it is available or not)
+What I fucused on is that I tried to implement most of the function in Frontend to prevent the users to make any actions that affects badly on our server side. Because if a lot of users calls many APIs at the same, the server load can be higher that may leads to the server down. In addition, instead of asking backend for processing or data in Database, I tried to handle that in frontend in order to reduce the API calls and loading time so that I can increase the User Experience. (ex. Disable all the time slots on the same day once the user reserves (calls the API) instead of calling the APIs to check each time slots whether it is available or not)
 
 
 - - - 
@@ -53,12 +53,46 @@ All the functions above worked successfully and there was no server down during 
 - - - 
 
 # How To
-## Development in Local
 ### Frontend
-
+1. check .env files are correct with your local enviornment
+2. build and start the docker using `docker-compose.yml` in the background
+```
+docker-compose build
+```
+```
+docker-compose up -d
+```
+3. Make sure the backend is also working
+4. Accesss to `localhost`
 
 ### Backend
 
+1. check .env files are correct with your local environment
+2. build the docker using `docker-compose.yml`
+```
+docker-compose build
+```
+3. First, install Gem(packages) by running
+```
+docker-compose run --rm api bundle install
+```
+4. `gem: rubocop` is included for checking the Rails grammer so please run
+```
+docker-compose run --rm api bundle exec rubocop -A
+```
+5. create initial DB by running
+```
+docker-compose run --rm api bundle exec rails db:create
+```
+6. for updating the schema, use `ridgepole` after defining in `api/Schemafile` and run
+```
+docker-compose run --rm api bundle exec rake ridgepole:apply
+```
+7. seeds by runnnig
+```
+docker-compose run --rm api bundle exec rails db:seed
+```
+8. Make sure all containers are up and `redis` is working
 
 
 ## Main Tech Stack
