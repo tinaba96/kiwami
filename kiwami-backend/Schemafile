@@ -1,0 +1,20 @@
+# coding: utf-8
+
+create_table :users, force: :cascade do |t|
+  t.string   :uid
+  t.string   :name
+  t.string   :email
+  t.integer  :gender
+  t.integer  :role
+  t.datetime :updated_at, null: false
+  t.datetime :created_at, null: false
+end
+
+create_table :reservations, force: :cascade do |t|
+  t.bigint   :user_id, null: false
+  t.date     :date, null: false
+  t.integer  :start_time, null: false
+  t.boolean  :is_deleted, null: false, default: false
+  t.datetime :updated_at, null: false
+  t.datetime :created_at, null: false
+end

@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password: password
+  host: db
+
+development:
+  <<: *default
+  database: kiwami_development
+
+test:
+  <<: *default
+  database: kiwami_test
+
+production:
+  <<: *default
+  database: heroku_3ca88e37b396661
+  username: bad3abdd5d1d38
+  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
