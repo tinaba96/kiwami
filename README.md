@@ -106,7 +106,8 @@ docker-compose run --rm api bundle exec rails db:seed
 
 
 ## Architecture
-<img width="808" alt="image" src="https://github.com/tinaba96/kiwami/assets/57109730/86cdab9a-3d2b-4d1a-9ce9-c62184526a37">
+<img width="814" alt="image" src="https://github.com/tinaba96/kiwami/assets/57109730/9075e404-9707-4b3a-b0cc-95f1a0a75062">
+
 
 
 
